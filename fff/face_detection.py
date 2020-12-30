@@ -16,13 +16,16 @@ class FaceDetector:
         if self.method == "dnn":
             logger.info("Loading face detection model")
             self.net = cv2.dnn.readNetFromCaffe(
-                os.path.join(
-                    os.path.abspath(__file__),
-                    "../models/face_detection_model/deploy.prototxt",
+                os.path.abspath(
+                    os.path.join(
+                        __file__, "../models/face_detection_model/deploy.prototxt",
+                    )
                 ),
-                os.path.join(
-                    os.path.abspath(__file__),
-                    "../models/face_detection_model/res10_300x300_ssd_iter_140000.caffemodel",
+                os.path.abspath(
+                    os.path.join(
+                        __file__,
+                        "../models/face_detection_model/res10_300x300_ssd_iter_140000.caffemodel",
+                    )
                 ),
             )
 

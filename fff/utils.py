@@ -44,5 +44,4 @@ def image_pyramid(image, level=3):
 
 def load_template(path: str):
     template = cv2.imread(path)
-    template = cv2.resize(template, (220, 220))
     return template

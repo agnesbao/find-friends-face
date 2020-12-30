@@ -8,6 +8,7 @@ dependencies:
   - scipy
   - pandas
   - loguru
+  - face-recognition
   - pip:
       - attrs
       - opencv-python
